@@ -1,0 +1,91 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <h3>You are new? Register NOW to Join the Global Movie Aficionados!</h3>
+
+    <br>
+
+<div class="container">
+    <div class="registerForm">
+        <form action="../actions/register_user_action.php" method="POST" name="register" id="register">
+            <label for="firstName">First Name:</label>
+            <div class="input-container">
+                <i class="fas fa-user input-icon"></i>
+            <input type="text" placeholder="Enter your first name" name="fname" id="firstName" required>
+            </div>
+
+            <div style="padding-top: 20px;">
+                <label for="lastName">Last Name:</label>
+                <div class="input-container">
+                    <i class="fas fa-user input-icon"></i>
+                <input type="text" placeholder="Enter your last name" name="lname" id="lastName" required>
+                </div>
+            </div>
+
+            <div style="padding-top: 20px;">
+                <label for="username">Username:</label>
+                <div class="input-container">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" placeholder="Enter your username" name="username" id="username" required>
+                </div>
+            </div>
+
+            <div style="padding-top: 20px;">
+                <label for="email">Email:</label>
+                <div class="input-container">
+                    <i class="fas fa-envelope input-icon"></i>
+                <input type="email" placeholder="Enter your email" name="email" id="email" required>
+                </div>
+            </div>
+
+            <div style="padding-top: 20px;">
+                <label for="password">Password:</label>
+                <div class="input-container">
+                    <i class="fas fa-lock input-icon"></i>
+                <input type="password" placeholder="Enter password" name="password" id="password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <i class="fas fa-eye"></i>
+                </span>
+                </div>
+            </div>
+
+            <div style="padding-top: 20px;">
+                <label for="confirmPassword">Confirm Password:</label>
+                <div class="input-container">
+                    <i class="fas fa-lock input-icon"></i>
+                <input type="password" name="re_password" id="confirmPassword" placeholder="Retype Password" required>
+                <span class="toggle-password-confirm" onclick="toggleConfirmPasswordVisibility()">
+                    <i class="fas fa-eye"></i>
+                </span>
+                </div>
+            </div>
+
+            <div style="padding-top: 20px;">
+                <button type="submit" name="submitButton" id="submit">Sign Up</button>
+            </div>
+
+            <div class="login-container">
+            <a href="../login/login_view.php" class="loginRedirect">Already have an account? Login In</a>
+            </div>
+        </form>
+        <!-- <div class="image-container">
+            <img src="movie_img/SIDE.jpeg" alt="">
+        </div> -->
+    </div>
+
+    
+</div>
+    <script src="../js/register.js"></script>
+</body>
+</html>
+
+
+
+  
