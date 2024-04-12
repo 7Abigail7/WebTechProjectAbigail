@@ -44,22 +44,32 @@ form.addEventListener('submit', (event) => {
 });
 
 // Email validation function
+// function validateEmail(email) {
+
+//   return email.includes('@') && email.includes('.');
+// }
+
+// // Password validation function
+// function validatePassword(password) {
+  
+//   return password.length >= 8 &&
+//          /[a-z]/.test(password) &&
+//          /[A-Z]/.test(password) &&
+//          /\d/.test(password) &&
+//          /[^a-zA-Z0-9]/.test(password);
+// }
+// Email validation function using regex
 function validateEmail(email) {
-  // TODO: Implement a more robust email validation using a regular expression
-  // This is a simplified example, replace for production
-  return email.includes('@') && email.includes('.');
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
 }
 
-// Password validation function
+// Password validation function using regex
 function validatePassword(password) {
-  // TODO: Implement a more robust password validation using a regular expression
-  // This is a simplified example, replace for production
-  return password.length >= 8 &&
-         /[a-z]/.test(password) &&
-         /[A-Z]/.test(password) &&
-         /\d/.test(password) &&
-         /[^a-zA-Z0-9]/.test(password);
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  return passwordRegex.test(password);
 }
+
 
 // Disable register button until form is valid
 form.addEventListener('input', () => {

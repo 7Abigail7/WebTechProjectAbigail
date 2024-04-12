@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['r_id'])&& isset($_POST
     $stmt->execute();
     if($stmt){
         $_SESSION['success'] = "reflection updated";
-        header ('Location: ../view/index.php');
+        header ('Location: ../view/reflect.php');
     }
     // elseif ($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['r_id'])){
     //     $ref_id = $_POST['r_id'];

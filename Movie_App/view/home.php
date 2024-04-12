@@ -170,7 +170,7 @@
 
         <div class="menu-item">
             <i class="menu-icon fa-solid fa-bookmark"></i>
-            <a href="../view/index.php" class="menu-text" style="  text-decoration: none;">Reflecta</a>
+            <a href="../view/reflect.php" class="menu-text" style="  text-decoration: none;">Reflecta</a>
         </div>
     </div>
 
@@ -285,27 +285,27 @@
                 xhr.send();
             }
 
-                document.addEventListener("DOMContentLoaded", function() {
-                    const toggle = document.getElementById("toggle");
-                    const moonIcon = document.getElementById("moonIcon");
-                    const sunIcon = document.getElementById("sunIcon");
-                    const toggleBall = document.getElementById("toggleBall");
+            document.addEventListener("DOMContentLoaded", function() {
+                const toggle = document.getElementById("toggle");
+                const moonIcon = document.getElementById("moonIcon");
+                const sunIcon = document.getElementById("sunIcon");
+                const toggleBall = document.getElementById("toggleBall");
 
-                    toggle.addEventListener("click", function(event) {
-                        // Prevent default behavior (e.g., navigation)
-                        event.preventDefault();
+                toggle.addEventListener("click", function(event) {
+                    // Prevent default behavior (e.g., navigation)
+                    event.preventDefault();
 
-                        // Toggle dark mode class on body
-                        document.body.classList.toggle("dark-mode");
+                    // Toggle dark mode class on body
+                    document.body.classList.toggle("dark-mode");
 
-                        // Toggle visibility of moon and sun icons
-                        moonIcon.classList.toggle("hidden");
-                        sunIcon.classList.toggle("hidden");
+                    // Toggle visibility of moon and sun icons
+                    moonIcon.classList.toggle("hidden");
+                    sunIcon.classList.toggle("hidden");
 
-                        // Move the toggle ball to the left for dark mode, and to the right for light mode
-                        toggleBall.classList.toggle("dark-mode");
-                    });
+                    // Move the toggle ball to the left for dark mode, and to the right for light mode
+                    toggleBall.classList.toggle("dark-mode");
                 });
+            });
         </script>
 </body>
 

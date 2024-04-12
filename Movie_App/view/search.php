@@ -359,7 +359,7 @@
 
         <div class="menu-item">
             <i class="menu-icon fa-solid fa-bookmark"></i>
-            <a href="../view/index.php" class="menu-text" style="  text-decoration: none;">Reflecta</a>
+            <a href="../view/reflect.php" class="menu-text" style="  text-decoration: none;">Reflecta</a>
         </div>
     </div>
 
