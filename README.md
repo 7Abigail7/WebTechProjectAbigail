@@ -42,7 +42,7 @@ We welcome contributions from the community to improve and enhance the Cinemacio
 
 
 ## Contact
-For any inquiries or support, please contact us at(https://github.com/7Abigail7)
+For any inquiries or support, please contact me at(https://github.com/7Abigail7)
 
 Happy movie-watching!
 
